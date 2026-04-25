@@ -11,8 +11,21 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-black text-white font-sans flex flex-col">
-      {/* Navigation */}
-      <nav className="w-full flex items-center justify-between px-6 py-5 border-b border-[#222]">
+      {/* Navigation */}<nav className="relative z-50 w-full flex items-center justify-between px-4 py-5 border-b border-[#222] bg-black">
+  <div>
+    <Image src="/logo.jpg" alt="The AT Corner Logo" width={60} height={60} priority />
+  </div>
+  <div className="flex gap-4 md:gap-8 text-base font-medium">
+    <a href="/" className="hover:text-[#E6C674]">Home</a>
+    <a href="/#episodes" className="hover:text-[#E6C674]">Episodes</a>
+    
+    
+    <a href="/sponsors" className="hover:text-[#E6C674]">Sponsors</a>
+    
+  </div>
+</nav>
+
+      <nav className="w-full flex items-center justify-between px-6 py-5 border-b border-[#222] relative z-50 pointer-events-auto">
         <div>
           <Image
             src="/logo.jpg"
@@ -23,9 +36,24 @@ export default function Home() {
           />
         </div>
         <div className="flex gap-8">
-          <a href="#" className="hover:text-[#E6C674] transition-colors">Home</a>
-          <a href="#" className="hover:text-[#E6C674] transition-colors">Episodes</a>
-          <a href="#" className="hover:text-[#E6C674] transition-colors">Sponsors</a>
+          <a
+            href="/"
+            className="hover:text-[#E6C674] transition-colors"
+          >
+            Home
+          </a>
+          <a
+            href="/#episodes"
+            className="hover:text-[#E6C674] transition-colors"
+          >
+            Episodes
+          </a>
+          <a
+            href="/sponsors"
+            className="hover:text-[#E6C674] transition-colors"
+          >
+            Sponsors
+          </a>
         </div>
       </nav>
 
@@ -40,13 +68,18 @@ export default function Home() {
             <p className="text-lg sm:text-xl text-[#C6C6C6] mb-6 max-w-xl">
               Exploring the creator economy, one story at a time.
             </p>
+            {/* YouTube main button */}
             <a
-              href="https://youtube.com/@theatcornerstories"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-8 py-3 bg-[#E6C674] text-black text-lg font-semibold rounded-full shadow transition-colors hover:bg-[#d4b462]"
             >
-              Watch on YouTube
+              <span
+                className="inline-block px-8 py-3 bg-[#E6C674] text-black text-lg font-semibold rounded-full shadow transition-colors hover:bg-[#d4b462] cursor-pointer"
+                style={{ textDecoration: 'none' }}
+              >
+                Watch on YouTube
+              </span>
             </a>
           </div>
           {/* Right column: Embla Carousel */}
@@ -73,7 +106,10 @@ export default function Home() {
       </section>
 
       {/* Latest Episodes */}
-      <section className="w-full max-w-6xl mx-auto px-4 py-12">
+      <section
+        id="episodes"
+        className="w-full max-w-6xl mx-auto px-4 py-12"
+      >
         <h2 className="text-2xl font-bold mb-8 text-center sm:text-left text-white">
           Latest Episodes
         </h2>
