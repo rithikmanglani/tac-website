@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-black text-white font-sans flex flex-col">
-      {/* Navigation */}<nav className="relative z-50 w-full flex items-center justify-between px-4 py-5 border-b border-[#222] bg-black">
+      {/* Navigation */}<nav className="relative z-50 hidden w-full items-center justify-between border-b border-[#222] bg-black px-4 py-5 md:flex">
   <div>
     <Image src="/logo.jpg" alt="The AT Corner Logo" width={60} height={60} priority />
   </div>
@@ -25,7 +25,7 @@ export default function Home() {
   </div>
 </nav>
 
-      <nav className="w-full flex items-center justify-between px-6 py-5 border-b border-[#222] relative z-50 pointer-events-auto">
+      <nav className="relative z-50 flex w-full items-center justify-between border-b border-[#222] px-6 py-5 pointer-events-auto md:hidden">
         <div>
           <Image
             src="/logo.jpg"
