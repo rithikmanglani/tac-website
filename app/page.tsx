@@ -167,17 +167,21 @@ export default function Home() {
             <div className="text-[#E6C674]/70 mb-4 text-center">
               with Jhanvi Malhotra
             </div>
-            <a
-             
-              <a
-              href="https://youtube.com/@theatcornerstories?si=Ce0tnbQ3cYpzuoa6"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-red-600 text-white font-bold rounded-full px-8 py-3 hover:bg-red-700 transition-colors inline-block"
-            >
-              Watch on YouTube
-            </a>
+            </div>
+        </div>
       </section>
+
+      {/* Final YouTube Button */}
+      <div className="flex justify-center pb-16">
+        <a
+          href="https://youtube.com/@theatcornerstories?si=Ce0tnbQ3cYpzuoa6"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-red-600 text-white font-bold rounded-full px-8 py-3 hover:bg-red-700 transition-colors inline-block"
+        >
+          Watch on YouTube
+        </a>
+      </div>
     </div>
   );
 }
