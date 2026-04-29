@@ -129,7 +129,8 @@ export default function Home() {
               rel="noopener noreferrer"
               className="mt-auto px-4 py-2 bg-[#E6C674] text-black rounded-full font-medium hover:bg-[#d4b462] transition-colors inline-block text-center"
             >
-              Watch on YouTube
+              Watch Now
+         
             </a>
           </div>
           {/* Episode Card 2 */}
@@ -151,7 +152,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="mt-auto px-4 py-2 bg-[#E6C674] text-black rounded-full font-medium hover:bg-[#d4b462] transition-colors inline-block text-center"
             >
-              Watch on YouTube
+              Watch Now
             </a>
           </div>
           {/* Episode Card 3 */}
@@ -166,7 +167,14 @@ export default function Home() {
             </div>
             <div className="text-[#E6C674]/70 mb-4 text-center">
               with Jhanvi Malhotra
-            </div>
+            </div><a
+            href="https://youtu.be/HK3_bfzGjxM?si=54R0G0F4OjSpnAe9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-auto px-4 py-2 bg-[#E6C674] text-black rounded-full font-medium hover:bg-[#d4b462] transition-colors text-center"
+          >
+            Watch Now
+          </a>
             </div>
         </div>
       </section>
