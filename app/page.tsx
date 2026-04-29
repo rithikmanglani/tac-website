@@ -70,16 +70,12 @@ export default function Home() {
             </p>
             {/* YouTube main button */}
             <a
-              href="#"
+              href="https://youtube.com/@theatcornerstories?si=Ce0tnbQ3cYpzuoa6"
               target="_blank"
               rel="noopener noreferrer"
+              className="bg-red-600 text-white font-bold rounded-full px-8 py-3 hover:bg-red-700 transition-colors"
             >
-              <span
-                className="inline-block px-8 py-3 bg-[#E6C674] text-black text-lg font-semibold rounded-full shadow transition-colors hover:bg-[#d4b462] cursor-pointer"
-                style={{ textDecoration: 'none' }}
-              >
-                Watch on YouTube
-              </span>
+              Watch on YouTube
             </a>
           </div>
           {/* Right column: Embla Carousel */}
