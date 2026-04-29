@@ -168,10 +168,7 @@ export default function Home() {
               with Jhanvi Malhotra
             </div>
             <a
-              href="https://youtu.be/HK3_bfzGjxM?si=54ROG0f4OJsPnAe9"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-auto px-4 py-2 bg-[#E6C674] text-black rounded-full font-medium hover:bg-[#d4b462] transition-colors inline-block text-center"
+             
               <a
               href="https://youtube.com/@theatcornerstories?si=Ce0tnbQ3cYpzuoa6"
               target="_blank"
